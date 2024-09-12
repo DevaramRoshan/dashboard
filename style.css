@@ -116,8 +116,11 @@ a {
 .aside a:hover {
   color: orange;
 }
-.aside i:hover {
+.aside li:active{
   color: orange;
+}
+.aside i:hover {
+  cursor: pointer;
 }
 .aside a:active .iframe {
   display: block;
@@ -157,6 +160,9 @@ aside button {
   flex-direction: column;
   background-color: white;
 }
+.card1:hover{
+  filter: brightness(0.5);
+}
 .card1 li {
   display: flex;
   padding-left: 1em;
@@ -179,6 +185,9 @@ aside button {
   justify-content: space-around;
   background-color: rgb(6, 6, 59);
   color: white;
+}
+.card2:hover{
+  filter: brightness(0.5);
 }
 .lecture {
   border-top: 1px solid white;
@@ -215,6 +224,9 @@ aside button {
   align-items: center;
   justify-content: space-around;
   background-color: white;
+}
+.card3:hover{
+  filter: brightness(0.5);
 }
 .pending {
   display: flex;
