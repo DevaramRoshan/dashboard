@@ -1,382 +1,176 @@
 * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-}
-/*main background*/
-.main {
-  height: 100vh;
-  width: 100vw;
-  background-color: skyblue;
-  display: flex;
-  gap: 1.2em;
-}
-/*main container*/
-.middle {
-  height: 100vh;
-  width: 81vw;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5em;
-  position: relative;
-}
-.iframe {
-  height: 85%;
-  width: 100%;
-  position: absolute;
-  top: 15%;
-  display: none;
-}
-/*Header*/
-.header {
-  height: 10%;
-  width: 100%;
-  border-radius: 15px;
-  margin-top: 0.4vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #ffffff;
-}
-.header > p {
-  font-size: 1.5em;
-  padding-left: 1em;
-}
-.profile {
-  height: 100%;
-  width: 20%;
-  display: flex;
-  align-items: center;
-  gap: 0.6em;
-  position: relative;
-}
-.profile > p {
-  font-size: 1em;
-  color: grey;
-}
-.profile > i {
-  overflow: hidden;
-  padding-left: 1.3em;
-}
-/*profile image section*/
-.img {
-  height: 80%;
-  width: 24%;
-  border-radius: 50%;
-  background-image: url(./beach.avif);
-  background-size: cover;
-  position: relative;
-}
-.drop{
-  background-color:white;
-  position: absolute;
-  top: 110%;
-  display: none;
-  height: 150%;
-  width: 280%;
-  border-radius: 1rem;
-}
-.drop li:hover{
-  color: orange;
-}
-.drop li{
-  height: 50%;
-  width: 80%;
-  display: flex;
-  align-items: center;
-}
-.drop li i{
-  color: orange;
-}
-.drop li a:hover{
-  color: orange;
-}
-.img:hover .drop{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-.img:hover{
-  border: 5px solid aqua;
-}
-/*for online status*/
-.status {
-  height: 15%;
-  width: 5%;
-  border-radius: 50%;
-  background-color: rgb(78, 244, 78);
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  z-index: 1;
-}
-/*sidebar*/
-.aside {
-  height: 100vh;
-  width: 15vw;
-  background-color: whitesmoke;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-}
-i {
-  overflow: hidden;
-  color: black;
-}
-/*aside middle */
-.links {
-  height: 50%;
-  width: 100%;
-}
-.links ol {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-ol > li {
-  padding-left: 1em;
-  display: flex;
-  align-items: center;
-  font-size: larger;
-}
-a {
-  padding-left: 1.5em;
-  color: black;
-}
-.aside a:hover {
-  color: orange;
-}
-.aside li:active{
-  color: orange;
-}
-.aside i:hover {
-  cursor: pointer;
-}
-.aside a:active .iframe {
-  display: block;
-}
-aside button {
-  height: 5%;
-  width: 50%;
-  border-radius: 0.5em;
-  font-weight: bold;
-  color: white;
-  background-color: rgb(221, 0, 0, 0.85);
-  border: none;
-}
-/*card section*/
-.progress {
-  height: 22%;
-  width: 100%;
-  margin-top: 1em;
-  /* background-color: orange; */
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  justify-content: center;
-}
-.card {
-  height: 100%;
-  width: 28%;
-  border-radius: 1.5em;
-  border: 1px solid black;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-.card1 {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-around;
-  flex-direction: column;
-  background-color: white;
-}
-.card1:hover{
-  filter: brightness(0.5);
-}
-.card1 li {
-  display: flex;
-  padding-left: 1em;
-}
-.card1 h4 {
-  font-size: medium;
-}
-.card1 i {
-  padding-left: 6em;
-  padding-top: 0.7em;
-}
-.center h4 {
-  font-size: large;
-  padding-left: 0.5em;
-  padding-top: 0.5em;
-}
-.card2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background-color: rgb(6, 6, 59);
-  color: white;
-}
-.card2:hover{
-  filter: brightness(0.5);
-}
-.lecture {
-  border-top: 1px solid white;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  background-color: rgb(6, 6, 59);
-}
-.lecture li {
-  display: flex;
-  align-items: center;
-  padding-left: 1em;
-}
-.instructor {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top: 1px solid white;
-  padding-top: 1.2em;
-  padding-bottom: 1em;
-  background-color: rgba(6, 6, 59, 0.3);
-}
-.instructor h4 {
-  color: lightgreen;
-}
-.card2 > h4 {
-  font-size: large;
-  padding-left: 4em;
-  padding-top: 0.5em;
-}
-.card3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  background-color: white;
-}
-.card3:hover{
-  filter: brightness(0.5);
-}
-.pending {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid black;
-  height: 30%;
-  width: 100%;
-  justify-content: center;
-  font-size: 1.3em;
-  gap: 0.5em;
-}
-
-.Batch {
-  height: 35%;
-  width: 100%;
-  border-top-right-radius: 1em;
-  border-top-left-radius: 1em;
-  position: relative;
-  box-sizing: border-box;
-}
-.top {
-  height: 30%;
-  width: 100%;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-  position: sticky;
-  top: 0;
-}
-.students {
-  height: 55%;
-  width: 100%;
-  background-color: white;
-  display: flex;
-  align-items: center;
-}
-.students p {
-  font-weight: bold;
-  font-size: large;
-  padding-left: 1em;
-  padding-right: 26em;
-}
-.students h3 {
-  font-size: 1.8em;
-  font-weight: bold;
-  color: rgb(69, 192, 241);
-}
-
-.headings {
-  height: 45%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 1.3em;
-  color: white;
-  background-color: rgba(46, 46, 132, 0.765);
-}
-.headings p {
-  padding-left: 1.5em;
-}
-.data {
-  height: 70%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-evenly;
-  overflow: scroll;
-  overflow-x: hidden;
-}
-.info {
-  height: 10%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 1.3em;
-  padding: 1em;
-  background-color: white;
-}
-.info button {
-  height: 100%;
-  width: 6%;
-  border-radius: 0.5em;
-  background-color: rgb(70, 184, 230);
-  color: white;
-}
-.attendance {
-  height: 30%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.outer {
-  height: 100%;
-  width: 17%;
-  border-radius: 50%;
-  background-color: rgb(27, 27, 74);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.inner {
-  height: 80%;
-  width: 80%;
-  background-color: white;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.inner i {
-  border: 3px solid black;
-  border-radius: 50%;
-  padding: 0.2em;
-}
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  /*main background*/
+  .main {
+    height: 100vh;
+    width: 100vw;
+    background-color: skyblue;
+    display: flex;
+    gap: 1.2em;
+  }
+  /*main container*/
+  .middle {
+    height: 100vh;
+    width: 81vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    position: relative;
+  }
+  .iframe {
+    height: 86%;
+    width: 100%;
+    position: absolute;
+    top: 13%;
+    border: none;
+    outline: none;
+  }
+  /*Header*/
+  .header {
+    height: 10%;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 0.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+  }
+  .header > p {
+    font-size: 1.5em;
+    padding-left: 1em;
+  }
+  .profile {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    position: relative;
+  }
+  .profile > p {
+    font-size: 1em;
+    color: grey;
+  }
+  .profile > i {
+    overflow: hidden;
+    padding-left: 1.3em;
+  }
+  /*profile image section*/
+  .img {
+    height: 80%;
+    width: 26%;
+    border-radius: 50%;
+    background-image: url(./beach.avif);
+    background-size: cover;
+    position: relative;
+  }
+  .drop{
+    background-color:white;
+    position: absolute;
+    top: 110%;
+    display: none;
+    height: 150%;
+    width: 280%;
+    border-radius: 1rem;
+    z-index: 1;
+  }
+  .drop li:hover{
+    color: orange;
+  }
+  .drop li{
+    height: 50%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
+  .drop li i{
+    color: orange;
+  }
+  .drop li a:hover{
+    color: orange;
+  }
+  .img:hover .drop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .img:hover{
+    border: 5px solid aqua;
+  }
+  /*for online status*/
+  .status {
+    height: 15%;
+    width: 5%;
+    border-radius: 50%;
+    background-color: rgb(78, 244, 78);
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    z-index: 1;
+  }
+  /*sidebar*/
+  .aside {
+    height: 100vh;
+    width: 15vw;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  i {
+    overflow: hidden;
+    color: black;
+  }
+  /*aside middle */
+  .links {
+    height: 50%;
+    width: 100%;
+  }
+  .links ol {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  ol > li {
+    padding-left: 1em;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+  }
+  a {
+    padding-left: 1.5em;
+    color: black;
+  }
+  .aside a:hover {
+    color: orange;
+  }
+  .links ol li a:active{
+    color: orange;
+  }
+  .aside i:hover {
+    cursor: pointer;
+  }
+  .aside a:active .iframe {
+    display: block;
+  }
+  aside button {
+    height: 5%;
+    width: 50%;
+    border-radius: 0.5em;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(221, 0, 0, 0.85);
+    border: none;
+  }
