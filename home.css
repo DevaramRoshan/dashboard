@@ -4,6 +4,7 @@
   list-style: none;
   text-decoration: none;
 }
+/*home.html*/
 .main{
   height: 100vh;
   width: 100vw;
@@ -219,4 +220,139 @@
   border: 3px solid black;
   border-radius: 50%;
   padding: 0.2em;
+}
+
+
+
+
+
+/*classes.html*/
+
+.main{
+  height: 100vh;
+  width: 100vw;
+  /* background-color: yellow; */
+}
+.classestop{
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.classestop h2{
+  color: grey;
+  font-weight: lighter;
+  padding: 1rem;
+}
+.dates{
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.date1{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  height: 50%;
+  width: 45%;
+  border-radius: 5px;
+}
+.date1 i{
+  padding: 0 1rem 0 1rem;
+}
+.date1 p{
+  font-size: larger;
+  color: grey;
+  font-weight: 100;
+}
+.date2{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  height: 50%;
+  width: 45%;
+  border-radius: 5px;
+}
+.date2 p{
+  font-size: larger;
+  color: grey;
+  font-weight: 100;
+  padding: 0 3rem 0 1rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.386);
+  
+}
+.date2 i{
+  padding-left: 0.5rem;
+}
+.classboxes{
+  height: 15vh;
+  width: 98vw;
+  border-radius: 1.1rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.5px solid rgba(0, 0, 0, 0.25);
+  margin-top: 1rem;
+}
+.right{
+  height: 100%;
+  width: 40%;
+}
+.right h3{
+  color: orange;
+  padding-left: 1.3rem;
+  padding-top: 0.8rem;
+}
+.rightbox{
+  height: 60%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 1rem 0 1rem;
+}
+.boxes{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 80%;
+  border-right: 3px solid rgba(0, 0, 0, 0.25);
+  padding-right: 1.5rem;
+}
+.boxes p{
+  font-size: large;
+  color: grey;
+}
+.boxes li a{
+  background-color: rgba(88, 237, 88, 0.8);
+  padding: 0.2rem;
+  color: rgba(0, 128, 0, 0.8);
+  border-radius: 0.3rem;
+}
+.leftbox{
+  height: 100%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.leftbox button{
+  height: 40%;
+  width: auto;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  color: rgb(255, 166, 0);
+  font-weight: bold;
+  font-size: medium;
+  background-color: rgb(236, 199, 131);
+  margin-left: 1rem;
+  border: none;
+  outline: none;
 }
